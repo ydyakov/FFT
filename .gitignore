@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/FFT/bin
+/.vs/FFT/FileContentIndex
+/Math/obj
