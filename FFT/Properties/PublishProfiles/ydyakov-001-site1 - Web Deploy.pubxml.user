@@ -3,11 +3,10 @@
 This file is used by the publish/package process of your Web project. You can customize the behavior of this process
 by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
 -->
-<Project>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword />
-    <History>True|2024-10-03T16:51:04.8836189Z;False|2024-10-03T19:50:30.3865552+03:00;False|2024-10-03T19:50:16.2856887+03:00;True|2024-10-03T19:47:09.5879647+03:00;</History>
-    <LastFailureDetails />
+    <History>True|2024-10-03T20:32:48.7900978Z;</History>
   </PropertyGroup>
 </Project>

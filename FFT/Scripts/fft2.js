@@ -182,6 +182,9 @@ function fft() {
         success: function (data) {
             fData = data;
             drawFFT();
+            setTimeout(function () {
+                drawFFT(true);
+            }, 500);
             return;
         }
     });
