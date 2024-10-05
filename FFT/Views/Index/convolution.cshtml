@@ -102,9 +102,9 @@
                 </div>
             </div>
             <span> = </span>
-            <div>
-                <div id="l2" style="position: absolute; margin-top:  40px; margin-left: 40px; height: 100px; width: 100px;" class="loader"></div>
-                <canvas height="200px" width="200px" id="c2-result" style="cursor: pointer; border: solid 1px white" onclick="convolute2()"></canvas>
+            <div style=" border: solid 1px white;">
+                <div id="l2"  style="position: absolute; margin-top: 40px; margin-left: 40px; height: 100px; width: 100px; z-index: 100;"  class="loader"></div>
+                <canvas height="200px" width="200px" id="c2-result" style="cursor: pointer;" onclick="convolute2()"></canvas>
             </div>
         </div>
 
@@ -311,9 +311,24 @@
         $('#l1').show();
         setTimeout(() => { convoluteCompute(1) }, 300);
     }
+
+    var flag = true;
+    $("#c2-result").css("filter", "brightness(0)");
+    setTimeout(function () { convoluteCompute(2) }, 2000);
+
     function convolute2() {
-        $('#l2').show();
-        setTimeout(() => { convoluteCompute(2) }, 300);
+        if (flag) {
+            $('#l2').show();
+            setTimeout(function () {
+                $("#c2-result").css("filter", "");
+                $('#l2').hide();
+            }, 300);
+            flag = false;
+        }
+        else {
+            $('#l2').show();
+            setTimeout(() => { convoluteCompute(2) }, 300);
+        }
     }
     function convoluteCompute(index) {
         xMatrix = yMatrix = $('#m' + index + ' > div').length;
