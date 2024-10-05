@@ -21,6 +21,13 @@ a, a:hover {
     text-decoration: none;
 }
 
+.cursor1 {
+    cursor: url('/Content/mouse.png'), auto !important;
+}
+
+.cursor2 {
+    cursor: url('/Content/mouse-white.png'), auto !important;
+}
 
 .icin:before,
 .icon {
