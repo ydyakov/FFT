@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="Content/css/Site.css" rel="stylesheet" />
+    <link href="Content/css/grid-layout.css" rel="stylesheet" />
+    <link href="Content/css/input-style.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Armata|Libre+Barcode+128+Text|Voces" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+    <script src="Scripts/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div class="main-layout">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<div class="container">
+    <div style=" width: 100%; height: 90px; display: flex; flex-direction: row; align-self: center; align-items: center; justify-content: center; font-size: 45px; font-weight: 900;   margin: 0">
+        <span>Frequency Properties</span>
+
+    </div>
+    <div style="width: 100%; height: auto; display: flex; flex-direction: row; align-self: flex-start; align-items: center; justify-content: flex-start;  margin: 0">
+        <div style="width: 100%;
+                    height: auto;
+                    width:50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-self: flex-start;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    margin-top: 10px;
+                    padding-left: 100px;">
+            <div class="iContainer">
+                <span class="first">
+                    Assumptions
+                </span>
+                <span>
+                    $$\color{red}{f(t)} \rightleftharpoons \color{blue}{F(\omega)}$$
+                </span>
+                <span>
+                    $$\color{red}{g(t)} \rightleftharpoons \color{blue}{G(\omega)}$$
+                </span>
+            </div>
+            <div class="iContainer">
+                <span class="first">
+                    Symmetry
+                </span>
+                <span>
+                    $$\color{red}{f(-t)} \rightleftharpoons \color{blue}{F(\omega)}$$
+                </span>
+
+            </div>
+            <div class="iContainer">
+                <span class="first">
+                    Similarity
+                </span>
+                <span>
+                    $$\color{red}{f(at)} \rightleftharpoons \frac{1}{|a|} \color{blue}{F(\frac{\omega}{a})}$$
+                </span>
+
+            </div>
+            <div class="iContainer">
+                <span class="first">
+                    Delay
+                </span>
+                <span>
+                    $$\color{red}{f(t-a)} \rightleftharpoons e^{-ia\omega}\color{blue}{F(\omega)}$$
+                </span>
+
+            </div>
+
+        </div>
+        <div style="width: 100%; height: 90%;  width:50%;  display: flex; flex-direction: column; align-self: flex-start; align-items: flex-start; justify-content: flex-start;  margin: 0">
+            <div class="iContainer">
+                <span class="first">
+                    Shifting
+                </span>
+                <span>
+                    $$e^{iat}\color{red}{f(t)} \rightleftharpoons \color{blue}{F(\omega-a)}$$
+                </span>
+            </div>
+
+            <div class="iContainer">
+                <span class="first">
+                    Convolution
+                </span>
+                <span>
+                    $$(f \ast g)(x) = \int_{-\infty}^{\infty}f(t)g(x-t)d{t}$$
+                </span>
+                <span>
+                    $$(f \otimes g)(x) = \int_{-\infty}^{\infty}f(t)g(t+x)d{t}$$
+                </span>
+                <span>
+                    $$\color{red}{(f \ast g)(t)} \rightleftharpoons \color{blue}{F(\omega)}\color{blue}{G(\omega)}$$
+                </span>
+            </div>
+
+
+        </div>
+    </div>
+
+       
+</div>
+
+
+
+<script type="text/javascript">
+    var frward = 'convolution.html';
+    var backward = 'data.html';
+    //var index = 0;
+    //$('#i1').hide();
+    //$('#i2').hide();
+
+
+    //$('body').keyup(function (e) {
+    //    if (e.keyCode == 32) {
+    //        index++;
+    //        if (index == 3) {
+    //            index = 1;
+    //        }
+    //        $('img').hide();
+    //        $('#i' + index).show();
+    //    }
+    //});
+
+
+</script>
+        <div class="bottom">
+            <span>Сиана Дякова | Софийски университет "Св. Климент Охридски" 2024</span>
+        </div>
+    </div>
+
+    <script src="Scripts/navigation.js"></script>
+</body>
+</html>
